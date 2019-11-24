@@ -5,7 +5,7 @@ There are 2 versions of the same demo, one is built on php, and the other is bui
 
 <b>Online Demo (uses PHP)</b>
 
-To try the uploaded, online version of the demo, first, launch Scatter and if you already have the "tipit" app, remove it. Next, you'll need to create and identity on the Kylin test network and also add it to Scatter, those instructions can be found here - https://medium.com/the-liquidapps-blog/liquidapps-walkthrough-2-staking-to-dapp-service-providers-and-deploying-a-vram-dapp-667007b3b8df .  Once you have the network added, import your private key into Scatter, and head to  https://tipit.io/liquidapps-hackathon/ to go through the demo.
+To try the uploaded, online version of the demo, first, launch Scatter and if you already have the "tipit" app, remove it. Next, you'll need to create and identity on the Kylin test network and also add it to Scatter, those instructions can be found here - https://medium.com/the-liquidapps-blog/liquidapps-walkthrough-2-staking-to-dapp-service-providers-and-deploying-a-vram-dapp-667007b3b8df .  You'll also want to fillup your new account with test EOS, which can be done here - http://faucet.cryptokylin.io/get_token/youreosaccountname. You can hit refresh until you reach your limit.  Once you have the network added, import your private key into Scatter, and head to  https://tipit.io/liquidapps-hackathon/ to go through the demo.
 
 
 <b>NodeJS Demo</b>
