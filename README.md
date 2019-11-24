@@ -20,7 +20,7 @@ To try the uploaded, online version of the demo, first, launch Scatter and if yo
     STRIPE_CUSTOMER=your Stripe customer ID<br>
     TIPIT_ENDPOINT=http://tipit.io/<br>
 
-4. Go to the nodejs/services directory and run "yarn" to get the project dependencies.
+4. Go to the nodejs/services directory and run "npm install" to get the project dependencies.
 
 5. Once the dependencies are installed, run "node index" from the service directory to start the server.  You'll want to make sure you don't have a firewall blocking it, you should read that the server started on port 5000.
 
