@@ -12,7 +12,7 @@ To try the uploaded, online version of the demo, first, launch Scatter and if yo
 
 1. First, clone the repo. Enter the nodejs/services folder in your terminal and run "touch .env", or create a .env file another way.
 
-2. If you don't have a developer account for Stripe, you'll need to sign up, create a customer, copy the customer ID, and also copy the Stripe secret API key for autorization.
+2. If you don't have a developer account for Stripe, you'll need to sign up, create a customer, copy the customer ID, and also copy the Stripe secret API key for authorization. Your Stripe Key can be found under your Stripe dashboard->home "Get your test API keys", and your customer id will show when you click on the customer you created in Stripe.
 
 3. Open your .env file and add the following
 
@@ -31,10 +31,10 @@ To try the uploaded, online version of the demo, first, launch Scatter and if yo
 
 <b>PHP Demo</b>
 
-1. First, clone the repo. Enter the php folder and use composer to install the Stripe library, found here - https://github.com/stripe/stripe-php
+1. First, clone the repo. Enter the php folder and use composer to install the Stripe library, this can be done by entering "composer require stripe/stripe-php", or alternatively you can download it here - https://github.com/stripe/stripe-php but will need to create a vendor autoload file.
 
-2. If you don't have a developer account for Stripe, you'll need to sign up, create a customer, copy the customer ID, and also copy the Stripe secret API key for autorization.
+2. If you don't have a developer account for Stripe, you'll need to sign up, create a customer, copy the customer ID, and also copy the Stripe secret API key for authorization.
 
-3. Once the Stripe library is installed, you'll need to edit the "settings.php" file in the directory and enter in the customer you created as the $settings['customer-id'] variable, and the Stripe key for the $settings['stripe-key'] variable.
+3. Once the Stripe library is installed, you'll need to edit the "settings.php" file in the directory and enter in the customer ID of the customer you created as the $settings['customer-id'] variable, and the Stripe key for the $settings['stripe-key'] variable. Your Stripe Key can be found under your Stripe dashboard->home "Get your test API keys", and your customer id will show when you click on the customer you created in Stripe.
 
 4. You are now ready to go. The tipit checkout method is disabled for the demo as the endpoint is private but you will now be able to check out with a the Scatter method.
