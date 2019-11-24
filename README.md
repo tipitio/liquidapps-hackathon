@@ -14,7 +14,7 @@ To try the uploaded, online version of the demo, first, launch Scatter and if yo
 
 2. If you don't have a developer account for Stripe, you'll need to sign up, create a customer, copy the customer ID, and also copy the Stripe secret API key for authorization. Your Stripe Key can be found under your Stripe dashboard->home "Get your test API keys", and your customer id will show when you click on the customer you created in Stripe.
 
-3. Open your .env file and add the following
+3. Open your .env file and add the following :
 
     STRIPE_KEY=your Stripe API Key<br>
     STRIPE_CUSTOMER=your Stripe customer ID<br>
