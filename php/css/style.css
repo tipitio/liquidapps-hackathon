@@ -1,0 +1,240 @@
+body {
+  background:#E7EDF6;
+}
+.main-wrapper {
+  width:100%;
+  font-family: 'Montserrat', sans-serif;
+  position:relative;
+  top:15px;
+  z-index:0;
+}
+
+.inner-container {
+  margin:0 auto;
+  max-width:400px;
+  padding:15px;
+  border-radius:12px;
+  box-sizing:border-box;
+  -webkit-box-shadow: 10px 10px 4px -4px #cbdaf1;
+  -moz-box-shadow: 10px 10px 4px -4px #cbdaf1;
+  box-shadow: 10px 10px 4px -4px #cbdaf1;
+  background:white;
+}
+
+
+.inner-container img {
+  width:100%;
+  border-radius:12px;
+}
+
+.inner-container h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size:19px;
+  margin-top:0px;
+}
+
+.inner-container select {
+  border:1px solid #cbdaf1;
+  border-radius:12px;
+  padding:15px;
+  width:100%;
+  font-size:20px;
+}
+
+button:focus,
+.inner-container select:focus {
+  outline:none !important;
+}
+
+
+.rotate {
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+.logo {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width:60px;
+  float:left;
+  margin-right:15px;
+}
+
+.logo h1 {
+  font-size:40px;
+  font-family: 'Comfortaa', cursive;
+  float:left;
+  position:relative;
+  top:17px;
+  color:#4d4d4d;
+}
+
+.presentation-row:first-of-type {
+  margin-top:20px;
+}
+
+.presentation-row {
+  width:100%;
+  padding:15px;
+  display:block;
+  box-sizing:border-box;
+  border-top:1px solid #f5f5f5;
+  font-size:25px;
+  font-weight:bold;
+  color:#4d4d4d;
+  font-family: 'Raleway', sans-serif;
+  text-decoration:none;
+  border-radius:12px;
+}
+
+.presentation-row:hover {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fef0b2+0,ffeb8e+100 */
+  background: #fef0b2; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fef0b2 0%, #ffeb8e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #fef0b2 0%,#ffeb8e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #fef0b2 0%,#ffeb8e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef0b2', endColorstr='#ffeb8e',GradientType=0 ); /* IE6-9 */
+
+}
+
+.presentation-row img {
+  width:40px;
+  border-radius:50%;
+  float:right;
+  margin-top:-5px;
+}
+
+.back-arrow {
+  font-size:45px;
+  height:0px;
+  position:relative;
+  left:20px;
+  top:20px;
+  color:#B9CFF0;
+  cursor:pointer;
+  text-decoration:none;
+  z-index:999;
+}
+
+
+#payment-selected {
+  margin-bottom:0px;
+}
+
+
+.seller-header {
+  display:flex;
+  width:100%;
+  box-sizing:border-box;
+  margin-bottom:15px;
+}
+
+.seller-header a {
+  font-weight:bold;
+  color:#4d4d4d;
+  font-family: 'Raleway', sans-serif;
+  text-decoration:none;
+  font-size:25px;
+  position:relative;
+  top:8px;
+}
+
+.seller-header img {
+  float:left;
+  border-radius:50%;
+  margin-right:15px;
+  width:80px;
+}
+
+
+.success-response {
+  background:#CBFFC2;
+  border:2px solid #85C97A;
+  display:flex;
+  padding:15px;
+  box-sizing:border-box;
+  color:#519047;
+  font-weight:bold;
+  border-radius:12px;
+}
+
+.StripeElement {
+  padding: 15px;
+  padding-top: 18px;
+  box-sizing: border-box !important;
+  width: 100%;
+  height: 56px;
+}
+
+.StripeElement {
+  border: 1px solid #cbdaf1;
+  border-radius:12px;
+}
+
+.row input:not(#terms-trigger-input, .slider),
+.StripeElement,
+.nice-select {
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+}
+.StripeElement {
+  background-color: white;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+.StripeElement--invalid {
+  border-color: #d4d4d4;
+}
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+button {
+  margin-top:15px;
+  width:100%;
+  padding:30px;
+  font-weight:bold;
+  color:white;
+  font-size:25px;
+  text-shadow: 1px 1px 1px #152d51 !important;
+  background: #5f8dd3;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d9ed1+0,5f8dd3+100 */
+  background: -moz-linear-gradient(top, #5e8ed4 0%, #3672c9 100%);
+  background: -webkit-linear-gradient(top, #5e8ed4 0%, #3672c9 100%);
+  background: linear-gradient(to bottom, #5e8ed4 0%, #3672c9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='lighten(@siteTheme, 0%)', endColorstr='darken(@siteTheme, 10%)', GradientType=0);
+  border-radius:12px;
+  border:none;
+  font-family: 'Montserrat', sans-serif;
+  cursor:pointer;
+}
+
+button .fa {
+  margin-left:15px;
+}
+
+#card-element {
+  margin-top:15px;
+}
