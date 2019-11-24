@@ -254,7 +254,7 @@ function submitPayment() {
                     })
 
 
-                    recordInStripe(account.name, to, amount, txid, memo, eos);
+                    recordInStripe(account.name, to, amount, txid, memo);
                     break;
 
                   case "author":
