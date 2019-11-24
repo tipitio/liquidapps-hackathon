@@ -1,0 +1,4 @@
+php/settings.php
+php/vendor
+nodejs/services/.env
+nodejs/services/node_modules
