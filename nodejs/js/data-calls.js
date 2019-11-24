@@ -231,35 +231,27 @@ function submitPayment() {
                     preoptions = '{ "authorization":["' + account.name + '@' + account.authority + '"] }';
                     const options = JSON.parse(preoptions);
 
-                    //vreceipt temp disabled until contract issue worked out
-                    // eos.transaction("gilsertience", myaccount => {
-                    //
-                    //
-                    // payload =   {
-                    //     "to" : to,
-                    //     "from" : account.name,
-                    //     "linkid" : "invc_fgf65436gtrty34",
-                    //     "linkplatform" : "stripe",
-                    //     "terms" : "some terms",
-                    //     "docs" : [
-                    //         {
-                    //         "owner" : account.name,
-                    //         "filename" : "honey2.jpg",
-                    //         "filedesc" : "testdesc1",
-                    //         "ipfsurl" : "http"
-                    //       }
-                    //     ]
-                    //   };
-                    //
-                    //
-                    //
-                    // myaccount.makereceipt({"payload" : payload}, options)
-                    // })
-                    // .then((output) => {
-                    //   recordInStripe(account.name, to, amount, txid, memo);
-                    // })
+                    //vreceipt example (dummy data)
+                    eos.transaction("gilsertience", myaccount => {
+                    myaccount.makereceipt({"payload" : {
+                        "to" : to,
+                        "from" : account.name,
+                        "linkid" : "inv_432432",
+                        "linkplatform" : "stripe",
+                        "terms" : "Don't do anything bad",
+                        "docs" : [
+                            {
+                            "owner" : "hankshoneys1",
+                            "filename" : "honey1.jpg",
+                            "filedesc" : "testdesc",
+                            "ipfsurl" : "httpgoogle.com"
+                          }
+                        ]
+                      }}, options)
+                    })
 
-                    recordInStripe(account.name, to, amount, txid, memo);
+
+                    recordInStripe(account.name, to, amount, txid, memo, eos);
                     break;
 
                   case "author":

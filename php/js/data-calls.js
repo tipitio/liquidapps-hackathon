@@ -238,29 +238,27 @@ function submitPayment() {
                     preoptions = '{ "authorization":["' + account.name + '@' + account.authority + '"] }';
                     const options = JSON.parse(preoptions);
 
-                    //vreceipt temp disabled until contract issue resolved
-                    // eos.transaction("gilsertience", myaccount => {
-                    // myaccount.makereceipt({"payload" : {
-                    //     "to" : to,
-                    //     "from" : account.name,
-                    //     "linkid" : "inv_432432",
-                    //     "linkplatform" : "stripe",
-                    //     "terms" : "Don't do anything bad",
-                    //     "docs" : [
-                    //         {
-                    //         "owner" : "hankshoneys1",
-                    //         "filename" : "honey1.jpg",
-                    //         "filedesc" : "testdesc",
-                    //         "ipfsurl" : "httpgoogle.com"
-                    //       }
-                    //     ]
-                    //   }}, options)
-                    // })
-                    // .then((output) => {
-                    //   recordInStripe(account.name, to, amount, txid, memo);
-                    // })
+                    //vreceipt example (dummy data);
+                    eos.transaction("gilsertience", myaccount => {
+                    myaccount.makereceipt({"payload" : {
+                        "to" : to,
+                        "from" : account.name,
+                        "linkid" : "inv_432432",
+                        "linkplatform" : "stripe",
+                        "terms" : "Don't do anything bad",
+                        "docs" : [
+                            {
+                            "owner" : "hankshoneys1",
+                            "filename" : "honey1.jpg",
+                            "filedesc" : "testdesc",
+                            "ipfsurl" : "httpgoogle.com"
+                          }
+                        ]
+                      }}, options)
+                    })
 
-                    recordInStripe(account.name, to, amount, txid, memo);
+
+                    recordInStripe(account.name, to, amount, txid, memo, eos);
                     break;
 
                   case "author":
