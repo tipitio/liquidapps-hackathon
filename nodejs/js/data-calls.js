@@ -249,6 +249,9 @@ function submitPayment() {
                         ]
                       }}, options)
                     })
+                    .catch((err) => {
+                      console.log(err);
+                    })
 
 
                     recordInStripe(account.name, to, amount, txid, memo, eos);
